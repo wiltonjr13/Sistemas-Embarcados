@@ -1,0 +1,28 @@
+﻿1. Especifique algumas portas importantes pré-definidas para o protocolo TCP/IP.
+
+Porta 80: HTTP Porta 8080: HTTPS
+
+2. Com relação a endereços IP, responda:
+
+(a) Qual é a diferença entre endereços IP externos e locais?
+Endereços externos são os endereços públicos, ou seja, os vistos pela internet. Os endereços locais são definidos para redes internas.
+
+(b) Como endereços IP externos são definidos? Quem os define?
+São definidos por numeros de 32 bits.
+
+(c) Como endereços IP locais são definidos? Quem os define?
+ São definidos por números de 32 bits e quem os define é o próprio administrador da rede interna.
+
+(d) O que é o DNS? Para que ele serve?
+É uma resolução de nomes atribuídos a um endereço de IP. Serve para que um usuário possa acessar um servidor na rede sem a necessidade de decorar seu endereço IP, apenas sabendo seu nome.
+
+3. Com relação à pilha de protocolos TCP/IP, responda:
+
+(a) O que são suas camadas? Para que servem?
+ São como etapas da transmissão dos dados. Servem para dividir o processo em partes.
+
+(b) Quais são as camadas existentes? Para que servem?
+Aplicação, transporte, rede e enlace.
+
+(c) Quais camadas são utilizadas pela biblioteca de sockets?
+Aplicação e transporte
