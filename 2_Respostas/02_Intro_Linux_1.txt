@@ -4,35 +4,36 @@
 Por causa do criador chamado Linus Torvalds, ia chamar de freax, de free e x, se referindo ao Unix. E apesar de considerar Linux como nome, não havia achado muito bom por ser demasiadamente egocêntrico. Porém um colega que trabalhava junto com ele não gostou de freax e deu o nome do projeto de linux sem avisar ao Torvalds, posteriormente ele aceitou o nome.
 
 
-1. O que são daemons?
+2. O que são daemons?
 
 
 É um programa de computador que executa um processo em plano de fundo, em vez de estar sob controle direto de um usuário interativo. Ele controla um serviço provido de pelo seu sistema.
 
 
-1. O que é o shell?
+3. O que é o shell?
 
 
 A interface Shell funciona como o intermediário entre o sistema operacional e o usuário graças às linhas de comando escritas por ele. A sua função é ler a linha de comando, interpretar seu significado, executar o comando e devolver o resultado pelas saídas. Na verdade, a interface Shell é um arquivo executável, encarregado de interpretar comandos, transmiti-los ao sistema e devolver resultados.
 
 
-1. Por que é importante evitar executar o terminal como super-usuário?
+4. Por que é importante evitar executar o terminal como super-usuário?
+
 Super-usuário ou Root (raiz) refere-se a um tipo de usuário com privilégios absolutos.Com o Root é possível ter controle total sobre o sistema o que pode ser muito perigoso, o que é mais recomendado não é logar como Root, e sim utilizar comandos como su e sudo. 
 
 
-1. Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
+5. Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
 
 
  Botão Tab
 
 
-1. Quais botões do teclado apresentam instruções escritas anteriormente?
+6. Quais botões do teclado apresentam instruções escritas anteriormente?
 
 
 Botões up e down
 
 
-1. Apresente os respectivos comandos no terminal para:
+7. Apresente os respectivos comandos no terminal para:
 
 
 (a) Obter mais informações sobre um comando.
@@ -120,7 +121,7 @@ file
 (o) Limpar a tela do terminal.
 
 
-        clear
+clear
         
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
 
