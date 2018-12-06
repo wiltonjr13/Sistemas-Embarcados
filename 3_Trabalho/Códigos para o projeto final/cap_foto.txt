@@ -1,0 +1,43 @@
+import cv2
+import numpy as np
+classificador = cv2.CascadeClassifier("
+haarcascade-frontalface-default.xml")
+classificadorOlho = cv2.CascadeClassifier("
+haarcascade-eye.xml")
+camera = cv2.VideoCapture(0)
+amostra = 1
+numeroAmostras = 30
+id = input(’Digite seu ID: ’)
+largura, altura = 220, 220
+print("Capturando os rostos...")
+while (True):
+conectado, imagem = camera.read()
+imagemCinza = cv2.cvtColor(imagem,
+cv2.COLOR_BGR2GRAY)
+#print(np.average(imagemCinza))
+facesDetectadas =
+classificador.detectMultiScale(
+imagemCinza,
+scaleFactor=1.5,
+minSize=(150,150))
+for (h, j, k, l) in facesDetectadas:
+cv2.rectangle(imagem, (h, j), (h + k, j
++ l), (0, 0, 255), 2)
+if cv2.waitKey(1) & 0xFF == ord(’q’):
+#if np.average(imagemCinza) > 110:
+imagemFace = cv2.resize(
+imagemCinza[j:j + l, h:h + k], (
+largura, altura))
+cv2.imwrite("fotos/pessoa."+str(id)
++ "." + str(amostra) + ".jpg",
+imagemFace)
+print("[foto" + str(amostra) + "
+capturada com sucesso]")
+amostra += 1
+cv2.imshow("Face", imagem)
+cv2.waitKey(1)
+if (amostra >= numeroAmostras + 1):
+break
+print("Faces capturadas com sucesso!")
+camera.release()
+cv2.destroyAllWindows()
