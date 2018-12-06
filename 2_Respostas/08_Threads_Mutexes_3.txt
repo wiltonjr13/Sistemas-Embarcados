@@ -1,0 +1,26 @@
+﻿1. Apresente as características e utilidades das seguintes funções:
+
+
+a) popen()
+
+
+A função popen() abre um pipe entre dois programas, entre seu programa e o programa chamado por ela
+
+
+b) pclose()
+
+
+A função close fecha o pipe entre os programas
+
+
+c) fileno()
+
+
+A função fileno é como se fosse a função FILE, ou seja, direcionar o arquivo q vai ser utilizado
+
+
+2. Quais são as vantagens e desvantagens em utilizar:
+
+
+a) popen()
+b) exec()
